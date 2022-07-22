@@ -1,0 +1,27 @@
+.clients__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: $borderIcon;
+    border-radius: 4px;
+    transition: border $transition;
+
+    &:hover,
+    &:focus {
+        border: $borderIconAccent;
+    }
+}
+
+
+
+.clients__icon {
+    fill: $iconColor;
+    transition: fill $transition;
+
+    .clients__links:hover &,
+    .clients__links:focus & {
+        fill: $accentColor;
+    }
+}

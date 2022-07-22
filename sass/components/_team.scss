@@ -1,0 +1,14 @@
+.team {
+    display: flex;
+    
+    &__item {
+        max-width: 270px;
+        border-radius: 0px 0px 4px 4px;
+        background-color: $bgPrimaryColor;
+        box-shadow: $boxShadow;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}

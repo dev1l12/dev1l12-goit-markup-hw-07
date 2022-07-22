@@ -1,0 +1,37 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+
+
+.contacts__link {
+    display: flex;
+    padding: 32px 0;
+    align-items: center;
+    color: $primaryTextColor;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+
+
+.contacts__icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: $primaryTextColor;
+    transition: fill $transition;
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        fill: $accentColor;
+    }
+}

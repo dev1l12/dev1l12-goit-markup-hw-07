@@ -1,0 +1,30 @@
+.address {
+    margin-right: 70px;
+
+    &__list {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    color: $addressColor;
+    transition: color $transition;
+
+    &:hover,
+    &:hover {
+        color: $accentColor;
+    }
+
+    &--map {
+        color: $whiteTextColor;
+        transition: color $transition;
+    }
+}
+
+

@@ -1,0 +1,39 @@
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    margin-left: auto;
+
+    &__titel {
+        margin-bottom: 20px;
+        color: $whiteTextColor;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+}
+
+.mailing {
+    display: flex;
+    align-items: stretch;
+}
+
+.mailing__input {
+    display: inline-block;
+    padding-left: 16px;
+    flex-grow: 1;
+    border: $borderFooterMailing;
+    border-radius: 4px;
+    background-color: transparent;
+
+    color: $mailingTextColor;
+
+    &::placeholder {
+        color: $mailingTextColor;
+    
+        font-size: 16px;
+        line-height: 1.25px;
+    }
+}

@@ -1,0 +1,46 @@
+
+.specifics {
+    display: flex;
+}
+
+.specifics__item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.specifics__box {
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $bgSecondaryColor;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.specifics__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.specifics__caption {
+    color: $secondaryTextColor;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.specifics__text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+
